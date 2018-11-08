@@ -30,6 +30,12 @@
     "build": "tsc",
     "watch": "tsc -w"
   },
+  "author": "Uni Sayo <unibtc@gmail.com> (https://github.com/uniibu)",
+  "repository": "https://github.com/uniibu/theia-vue-extension",
+  "bugs": {
+    "url": "https://github.com/uniibu/theia-vue-extension/issues"
+  },
+  "homepage": "https://github.com/uniibu/theia-vue-extension#readme",
   "theiaExtensions": [
     {
       "frontend": "lib/browser/vue-frontend-module",
