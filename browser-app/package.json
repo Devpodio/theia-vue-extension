@@ -16,7 +16,7 @@
     "@theia/monaco": "next",
     "@theia/typescript": "next",
     "@theia/messages": "next",
-    "@unibtc/theia-vue-extension": "^0.1.0"
+    "@unibtc/theia-vue-extension": "0.0.0"
   },
   "devDependencies": {
     "@theia/cli": "next"
