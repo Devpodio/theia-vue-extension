@@ -1,0 +1,39 @@
+{
+  "name": "@unibtc/theia-vue-extension",
+  "description": "Vuejs support for the Theia IDE",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "theia-extension"
+  ],
+  "license": "Apache-2.0",
+  "version": "0.1.0",
+  "files": [
+    "data",
+    "lib",
+    "src"
+  ],
+  "dependencies": {
+    "@theia/core": "next",
+    "@theia/languages": "next",
+    "@theia/monaco": "next",
+    "vue-language-server": "^0.0.35"
+  },
+  "devDependencies": {
+    "rimraf": "latest",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "prepare": "yarn run clean && yarn run build",
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/vue-frontend-module",
+      "backend": "lib/node/vue-backend-module"
+    }
+  ]
+}
