@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "electron-app",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "dependencies": {
     "@theia/core": "next",
     "@theia/editor": "next",
@@ -16,7 +16,7 @@
     "@theia/terminal": "next",
     "@theia/typescript": "next",
     "@theia/workspace": "next",
-    "@unibtc/theia-vue-extension": "^0.1.1"
+    "@unibtc/theia-vue-extension": "^0.1.2"
   },
   "devDependencies": {
     "@theia/cli": "next"
