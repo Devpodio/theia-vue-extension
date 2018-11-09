@@ -12,7 +12,7 @@ export class VueContribution extends BaseLanguageServerContribution {
     start(clientConnection: IConnection): void {
         const command = 'node';
         const args: string[] = [
-            resolve(__dirname, './vue-starter'),
+            resolve(__dirname, 'vue-starter'),
             '--stdio'
         ];
         try {
