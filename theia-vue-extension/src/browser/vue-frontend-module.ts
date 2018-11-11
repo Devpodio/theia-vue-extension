@@ -6,6 +6,6 @@ import { VueGrammarContribution } from './vue-grammar-contribution';
 
 export default new ContainerModule((bind: interfaces.Bind, unbind: interfaces.Unbind, isBound: interfaces.IsBound, rebind: interfaces.Rebind) => {
     bind(VueClientContribution).toSelf().inSingletonScope();
-    bind(LanguageClientContribution).toDynamicValue(ctx => ctx.container.get(VueClientContribution)).inSingletonScope();
+    bind(LanguageClientContribution).toService(VueClientContribution);
     bind(LanguageGrammarDefinitionContribution).to(VueGrammarContribution).inSingletonScope();
 });
