@@ -1,8 +1,9 @@
 {
   "private": true,
   "name": "browser-app",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "dependencies": {
+    "@devpodio/theia-vue-extension": "^0.1.5",
     "@theia/core": "next",
     "@theia/editor": "next",
     "@theia/filesystem": "next",
@@ -15,8 +16,7 @@
     "@theia/process": "next",
     "@theia/terminal": "next",
     "@theia/typescript": "next",
-    "@theia/workspace": "next",
-    "@devpodio/theia-vue-extension": "^0.1.4"
+    "@theia/workspace": "next"
   },
   "devDependencies": {
     "@theia/cli": "next"
