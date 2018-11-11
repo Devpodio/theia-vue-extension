@@ -19,7 +19,7 @@ Install yarn.
 ## Development Installation
 For local installation:
 
-- `git clone https://github.com/uniibu/theia-vue-extension.git`
+- `git clone https://github.com/devpodio/theia-vue-extension.git`
 - `cd theia-vue-extension`
 - `yarn`
 

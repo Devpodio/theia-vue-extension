@@ -16,7 +16,7 @@
     "@theia/terminal": "next",
     "@theia/typescript": "next",
     "@theia/workspace": "next",
-    "@unibtc/theia-vue-extension": "^0.1.4"
+    "@devpodio/theia-vue-extension": "^0.1.4"
   },
   "devDependencies": {
     "@theia/cli": "next"

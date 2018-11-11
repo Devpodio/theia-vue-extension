@@ -1,5 +1,5 @@
 {
-  "name": "@unibtc/theia-vue-extension",
+  "name": "@devpodio/theia-vue-extension",
   "description": "Vuejs support for the Theia IDE",
   "publishConfig": {
     "access": "public"
