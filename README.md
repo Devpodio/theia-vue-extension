@@ -1,4 +1,7 @@
 # Theia Vue Extension
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Devpodio/theia-vue-extension.svg)](https://greenkeeper.io/)
+
 Adds VueJs extension support to [Theia IDE](https://www.theia-ide.org/)
 
 ## Getting started
