@@ -1,0 +1,12 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "browser-app/package.json",
+        "electron-app/package.json",
+        "package.json",
+        "theia-vue-extension/package.json"
+      ]
+    }
+  }
+}
