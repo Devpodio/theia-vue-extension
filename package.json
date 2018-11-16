@@ -8,7 +8,7 @@
         "publish:next": "lerna publish --registry=https://registry.npmjs.org/ --exact --canary=next --npm-tag=next --skip-git --yes"
     },
     "devDependencies": {
-        "lerna": "2.11.0"
+        "lerna": "3.4.3"
     },
     "workspaces": [
         "theia-vue-extension",
