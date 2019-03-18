@@ -25,35 +25,6 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@devpodio/vue-language-server@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@devpodio/vue-language-server/-/vue-language-server-0.1.0.tgz#e06a1aa7a6d7704338c46549c3d8f62dd327a352"
-  integrity sha512-G5fa7PtbxjYjReJWIT1nmk9RSFRvXxEQ5Fc6ZsLPS+9fPPOa2OR3OuWPgbKwjnXAFuA8Jqk4+fqZd9+W8//GgA==
-  dependencies:
-    "@starptech/prettyhtml" "^0.3.3"
-    bootstrap-vue-helper-json "^1.1.1"
-    buefy-helper-json "^1.0.2"
-    element-helper-json "^2.0.2"
-    eslint "^5.6.0"
-    eslint-plugin-vue "^5.0.0-beta.3"
-    js-beautify "^1.7.5"
-    lodash "^4.17.4"
-    parse-gitignore "^1.0.1"
-    prettier "^1.11.1"
-    prettier-eslint "^8.8.1"
-    read-pkg-up "^4.0.0"
-    resolve "^1.8.1"
-    stylus "^0.54.5"
-    stylus-supremacy "^2.12.6"
-    typescript "2.8.4"
-    vscode-css-languageservice "^3.0.11"
-    vscode-emmet-helper "^1.1.19"
-    vscode-languageserver "^5.0.3"
-    vscode-languageserver-types "^3.12.0"
-    vscode-uri "^1.0.1"
-    vue-onsenui-helper-json "^1.0.2"
-    vuetify-helper-json "^1.0.0"
-
 "@emmetio/extract-abbreviation@0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@emmetio/extract-abbreviation/-/extract-abbreviation-0.1.6.tgz#e4a9856c1057f0aff7d443b8536477c243abe28c"
@@ -187,30 +158,36 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
   integrity sha512-ONhaKPIufzzrlNbqtWFFd+jlnemX6lJAgq9ZeiZtS7I1PIf/la7CW4m83rTXRnVnsMbW2k56pGYu7AUFJD9Pow==
 
-"@starptech/hast-util-from-webparser@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@starptech/hast-util-from-webparser/-/hast-util-from-webparser-0.3.4.tgz#7ccd8c2842022ea297fe0eab518ad927849b468b"
-  integrity sha512-DolZkMhd1Pzevc/yBVzhC2gag9fhqUbyoCs5791rsQYYy8lOGpcPfOPEIxqoncb9SBxCXwDykmM1QSuip78/8g==
-  dependencies:
-    "@starptech/prettyhtml-hastscript" "^0.3.4"
-    "@starptech/webparser" "^0.3.4"
-    property-information "https://github.com/StarpTech/property-information#attr_normalization_fix"
+"@starptech/expression-parser@^0.8.15":
+  version "0.8.15"
+  resolved "https://registry.yarnpkg.com/@starptech/expression-parser/-/expression-parser-0.8.15.tgz#8e196138c3e7127ee6139a13822cf23a8b159fcb"
+  integrity sha512-wDTh0DSt660sHdJySJZRJTqqkV3ekw41wA8sJkv7nJ3jCNggYHJugaoetlIPdO2JzjJ6Nyv5ZxG7N6u8DS6C5g==
 
-"@starptech/prettyhtml-formatter@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@starptech/prettyhtml-formatter/-/prettyhtml-formatter-0.3.4.tgz#a4c3710bd7c8ea5386563f21dcbc39c6d0b9ee47"
-  integrity sha512-I1qiYRa0uCHv1geoGQDUe2PUXeVbq1em87XUIisiArQFX2TUVRGk5ikPYkI4LW3grWDaVZjR/uf1kjffeFzEIw==
+"@starptech/hast-util-from-webparser@^0.8.10":
+  version "0.8.10"
+  resolved "https://registry.yarnpkg.com/@starptech/hast-util-from-webparser/-/hast-util-from-webparser-0.8.10.tgz#0f958f9b3c662ff5dad809bb30e77440a2878bde"
+  integrity sha512-vh2Z+QVluP2OAIHGjkRgibuy3i6IE9LDTXzfUcGu1OKmY7KWgaVEhfsVaBqOXqhV8IU2YWdgEg77xc8gSGHV3A==
   dependencies:
-    "@starptech/prettyhtml-hast-to-html" "^0.3.4"
-    "@starptech/rehype-minify-whitespace" "^0.3.4"
-    "@starptech/rehype-webparser" "^0.3.4"
-    "@starptech/webparser" "^0.3.4"
+    "@starptech/prettyhtml-hastscript" "^0.8.10"
+    "@starptech/webparser" "^0.8.10"
+    property-information "^5.0.1"
+
+"@starptech/prettyhtml-formatter@^0.8.16":
+  version "0.8.16"
+  resolved "https://registry.yarnpkg.com/@starptech/prettyhtml-formatter/-/prettyhtml-formatter-0.8.16.tgz#e0722c7aaef431417b35a19411e3bc239cfd1cba"
+  integrity sha512-KPN8tIKwws6Z6vY2Hab6guqPlaMRv2ok2SJDxtosCU2jrBDANKWhFoyMHrSikkVNd33xoOaH9vVjz0HzZvZZGQ==
+  dependencies:
+    "@starptech/expression-parser" "^0.8.15"
+    "@starptech/prettyhtml-hast-to-html" "^0.8.10"
+    "@starptech/rehype-minify-whitespace" "^0.8.14"
+    "@starptech/rehype-webparser" "^0.8.10"
+    "@starptech/webparser" "^0.8.10"
     hast-util-is-element "^1.0.1"
     hast-util-to-string "^1.0.1"
     html-void-elements "^1.0.3"
     html-whitespace-sensitive-tag-names "^1.0.0"
     is-hidden "^1.1.1"
-    prettier "^1.14.3"
+    prettier "^1.15.3"
     repeat-string "^1.6.1"
     to-vfile "^5.0.1"
     unified "^7.0.0"
@@ -219,10 +196,10 @@
     unist-util-visit-parents "^2.0.1"
     xtend "^4.0.1"
 
-"@starptech/prettyhtml-hast-to-html@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@starptech/prettyhtml-hast-to-html/-/prettyhtml-hast-to-html-0.3.4.tgz#6b966d08dca0d86a2e334d1ed0d8d105b369a1bc"
-  integrity sha512-iOc0HSonIfLviFY0xaIRoY2GEpI7rIHZVKQT/64wSgajgBqHRyAx9wz1hbn3tDCJP/cItvj1U4zGbvDGkjTrWA==
+"@starptech/prettyhtml-hast-to-html@^0.8.10":
+  version "0.8.10"
+  resolved "https://registry.yarnpkg.com/@starptech/prettyhtml-hast-to-html/-/prettyhtml-hast-to-html-0.8.10.tgz#dea8b36f8dfb336ad7f1dec944d1c36c28ac0f23"
+  integrity sha512-7W8ewqySuVPsXi7A4rvoaqj/5lhg/144iAvj9rglYUGt++5aXzOR6Vw/HUfd8pzOAzdcwldn1z7rKhKrv2ly3Q==
   dependencies:
     ccount "^1.0.3"
     comma-separated-tokens "^1.0.5"
@@ -230,32 +207,41 @@
     hast-util-whitespace "^1.0.1"
     html-void-elements "^1.0.3"
     html-whitespace-sensitive-tag-names "^1.0.0"
-    property-information "https://github.com/StarpTech/property-information#attr_normalization_fix"
+    property-information "^5.0.1"
     space-separated-tokens "^1.1.2"
     stringify-entities "^1.3.2"
     unist-util-is "^2.1.2"
     xtend "^4.0.1"
 
-"@starptech/prettyhtml-hastscript@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@starptech/prettyhtml-hastscript/-/prettyhtml-hastscript-0.3.4.tgz#9c64968574d17f6ab70512bcf4390d51ce8829f8"
-  integrity sha512-GwWVpMpzsL9h49Q6ECwWv7702GjurLDqHpZFg5V089NG8tN0TB9mI004dJ7zj9Jk9PXn+MjyFbz038X/xYDDpw==
+"@starptech/prettyhtml-hastscript@^0.8.10":
+  version "0.8.10"
+  resolved "https://registry.yarnpkg.com/@starptech/prettyhtml-hastscript/-/prettyhtml-hastscript-0.8.10.tgz#39f85e77cda07bb24482e66086f0fbaafd8bbcfb"
+  integrity sha512-p7dSSPRt/b2u80X+seuQfUCboXWr02HOeVXarQK2zzkAwZydMbC+h/N5Q0UZaOOlmIoJAghs8s+mKViPnbNUbw==
   dependencies:
     comma-separated-tokens "^1.0.5"
     hast-util-parse-selector "^2.2.0"
-    property-information "https://github.com/StarpTech/property-information#attr_normalization_fix"
+    property-information "^5.0.1"
     space-separated-tokens "^1.1.2"
 
-"@starptech/prettyhtml@^0.3.3":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@starptech/prettyhtml/-/prettyhtml-0.3.4.tgz#360af06535020c82539f13c0be1fd91c54205d87"
-  integrity sha512-rALY6xMsmCE3uMNzyDpCquTBk3udfJBmQ/AR2Vkzj4rzhSzscjjuG3KdKaO+zQkOEIoXOsHobRwHuZA19w0/7Q==
+"@starptech/prettyhtml-sort-attributes@^0.8.10":
+  version "0.8.10"
+  resolved "https://registry.yarnpkg.com/@starptech/prettyhtml-sort-attributes/-/prettyhtml-sort-attributes-0.8.10.tgz#06b53c88efec5c1e84d6698a7b8c758f9df83a3d"
+  integrity sha512-6xotmubj/ewfT66BbCHqsqfhb7K5SMocTfuJhLBft0tPlj/yl96l23y0jRU60TR3JKkSk+uBxdIztIdMJr8/PQ==
   dependencies:
-    "@starptech/prettyhtml-formatter" "^0.3.4"
-    "@starptech/rehype-webparser" "^0.3.4"
-    "@starptech/webparser" "^0.3.4"
+    hast-util-has-property "^1.0.0"
+    unist-util-visit "^1.0.0"
+
+"@starptech/prettyhtml@^0.8.4":
+  version "0.8.16"
+  resolved "https://registry.yarnpkg.com/@starptech/prettyhtml/-/prettyhtml-0.8.16.tgz#65a383989018308a055f50e6e87b702f56e441fd"
+  integrity sha512-6RT7FFoHSx7BYz+oWdNG4AGxZwHQV+NiVCwJBMlnebkIex0xZOO3S/DvKQuFRUYfmcxHjf8K41pKlURDGGRxlw==
+  dependencies:
+    "@starptech/prettyhtml-formatter" "^0.8.16"
+    "@starptech/prettyhtml-sort-attributes" "^0.8.10"
+    "@starptech/rehype-webparser" "^0.8.10"
+    "@starptech/webparser" "^0.8.10"
     meow "^5.0.0"
-    prettier "^1.14.3"
+    prettier "^1.15.3"
     rehype-sort-attribute-values "^1.0.1"
     unified "^7.0.0"
     unified-engine "^6.0.1"
@@ -263,10 +249,10 @@
     vfile "^3.0.0"
     vfile-reporter "^5.0.0"
 
-"@starptech/rehype-minify-whitespace@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@starptech/rehype-minify-whitespace/-/rehype-minify-whitespace-0.3.4.tgz#a6ff9d4d364b71f2b23564bab96423f065fe292f"
-  integrity sha512-gP+MldpPwbLXGOeY3XEE1nMRMRsTAmcH1+tjafm5sfSlQGk2sCjJfRzaGeKJ7vss/d44Ye0vkRXgdKgXtOmtZw==
+"@starptech/rehype-minify-whitespace@^0.8.14":
+  version "0.8.14"
+  resolved "https://registry.yarnpkg.com/@starptech/rehype-minify-whitespace/-/rehype-minify-whitespace-0.8.14.tgz#ac941deb5845681bbb5682a883874ac4555cbc15"
+  integrity sha512-MzYzZINQgZbdpvMvToW7xkgVmwgQ0h+b3IthYQO6K1tVKFmQ4gCIisa+MQzBGtnByFWpcKBBa0kRdgaU7iSMMA==
   dependencies:
     collapse-white-space "^1.0.4"
     hast-util-embedded "^1.0.1"
@@ -277,18 +263,18 @@
     unist-util-is "^2.1.2"
     unist-util-modify-children "^1.1.2"
 
-"@starptech/rehype-webparser@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@starptech/rehype-webparser/-/rehype-webparser-0.3.4.tgz#a89497fbc4d0646f57aa9c38a05e909546153494"
-  integrity sha512-WxtTAHp0jEX1tCXcadbiTp3BAbQt+GikW1SHecSjeZ853RIeBal23dWaAS4N3+WExbBikJRq3uGjEUELrAL+cQ==
+"@starptech/rehype-webparser@^0.8.10":
+  version "0.8.10"
+  resolved "https://registry.yarnpkg.com/@starptech/rehype-webparser/-/rehype-webparser-0.8.10.tgz#74973f994b2b24a9c44075880c053598b6229e17"
+  integrity sha512-EdItrDaPL2NqEG7yFDOD+tj2EMFYKD2m41Grs5QLWq3jNKRMOXLCpWMjLe8akm0DpDPGMg+iYQC2LN3ynIkiHA==
   dependencies:
-    "@starptech/hast-util-from-webparser" "^0.3.4"
-    "@starptech/webparser" "^0.3.4"
+    "@starptech/hast-util-from-webparser" "^0.8.10"
+    "@starptech/webparser" "^0.8.10"
 
-"@starptech/webparser@^0.3.4":
-  version "0.3.4"
-  resolved "https://registry.yarnpkg.com/@starptech/webparser/-/webparser-0.3.4.tgz#fc4906efd7b7584d2af09d7a15c60846d65122c6"
-  integrity sha512-PSyLLZBxN2ffWAbN9Vi4tNCS6OlWYQYSivg8er6KoXPm5AlZzXKPkYryTkQoJh5C6rPClNDVdMpKs2FAfAi8oQ==
+"@starptech/webparser@^0.8.10":
+  version "0.8.10"
+  resolved "https://registry.yarnpkg.com/@starptech/webparser/-/webparser-0.8.10.tgz#2bb6f362e93d8731beb4676c2f46d6100406f46f"
+  integrity sha512-6dGJKF/ZFJSuSL200CTZIvCRqgIwkq3Ye0h83XksbuELC1G/eg520Es8ZxfE+N/oe5JYmOM3iLEt1yXKTYFpFQ==
 
 "@theia/application-manager@0.5.0-next.a2f831cc":
   version "0.5.0-next.a2f831cc"
@@ -4011,7 +3997,7 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-eslint-plugin-vue@^5.0.0-beta.3:
+eslint-plugin-vue@^5.0.0:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/eslint-plugin-vue/-/eslint-plugin-vue-5.2.2.tgz#86601823b7721b70bc92d54f1728cfc03b36283c"
   integrity sha512-CtGWH7IB0DA6BZOwcV9w9q3Ri6Yuo8qMjx05SmOGJ6X6E0Yo3y9E/gQ5tuNxg2dEt30tRnBoFTbvtmW9iEoyHA==
@@ -4088,7 +4074,7 @@ eslint@^4.0.0:
     table "4.0.2"
     text-table "~0.2.0"
 
-eslint@^5.6.0:
+eslint@^5.9.0:
   version "5.15.2"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.15.2.tgz#0237bbb2362f89f4effef2f191eb0fea5279c0a5"
   integrity sha512-I8VM4SILpMwUvsRt83bQVwIRQAJ2iPMXun1FVZ/lV1OHklH2tJaXqoDnNzdiFc6bnCtGKXvQIQNP3kj1eMskSw==
@@ -7495,6 +7481,11 @@ number-is-nan@^1.0.0:
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
   integrity sha1-CXtgK1NCKlIsGvuHkDGDNpQaAR0=
 
+nuxt-helper-json@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/nuxt-helper-json/-/nuxt-helper-json-1.0.0.tgz#7a8a78c2d49749bf39d01cc26b8234ea0a91bf6b"
+  integrity sha512-MwFMhg8Xwjlo7dJeAuUImJxVMwyGGXfSjE7COiw0cAT7bFVJrA11ZJCwLrqPZQBfuBq3QxL8Q3/GzqA0BDr+Ug==
+
 oauth-sign@~0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.9.0.tgz#47a7b016baa68b5fa0ecf3dee08a85c679ac6455"
@@ -8379,7 +8370,7 @@ preserve@^0.2.0:
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
-prettier-eslint@^8.8.1:
+prettier-eslint@^8.8.2:
   version "8.8.2"
   resolved "https://registry.yarnpkg.com/prettier-eslint/-/prettier-eslint-8.8.2.tgz#fcb29a48ab4524e234680797fe70e9d136ccaf0b"
   integrity sha512-2UzApPuxi2yRoyMlXMazgR6UcH9DKJhNgCviIwY3ixZ9THWSSrUww5vkiZ3C48WvpFl1M1y/oU63deSy1puWEA==
@@ -8398,7 +8389,7 @@ prettier-eslint@^8.8.1:
     typescript-eslint-parser "^16.0.0"
     vue-eslint-parser "^2.0.2"
 
-prettier@^1.11.1, prettier@^1.14.3, prettier@^1.5.3, prettier@^1.7.0:
+prettier@^1.15.3, prettier@^1.16.4, prettier@^1.5.3, prettier@^1.7.0:
   version "1.16.4"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.4.tgz#73e37e73e018ad2db9c76742e2647e21790c9717"
   integrity sha512-ZzWuos7TI5CKUeQAtFd6Zhm2s6EpAD/ZLApIhsF9pRvRtM1RFo61dM/4MSRUA0SuLugA/zgrZD8m0BaY46Og7g==
@@ -8473,9 +8464,10 @@ prop-types@^15.6.0, prop-types@^15.6.2:
     object-assign "^4.1.1"
     react-is "^16.8.1"
 
-"property-information@git+https://github.com/StarpTech/property-information.git#attr_normalization_fix":
-  version "4.2.0"
-  resolved "git+https://github.com/StarpTech/property-information.git#e29762a02f9cf1d000da6c1cdb479800c60aa2c2"
+property-information@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/property-information/-/property-information-5.0.1.tgz#c3b09f4f5750b1634c0b24205adbf78f18bdf94f"
+  integrity sha512-nAtBDVeSwFM3Ot/YxT7s4NqZmqXI7lLzf46BThvotEtYf2uk2yH0ACYuWQkJ7gxKs49PPtKVY0UlDGkyN9aJlw==
   dependencies:
     xtend "^4.0.1"
 
@@ -10660,7 +10652,7 @@ unist-util-visit-parents@^2.0.0, unist-util-visit-parents@^2.0.1:
   dependencies:
     unist-util-is "^2.1.2"
 
-unist-util-visit@^1.1.0:
+unist-util-visit@^1.0.0, unist-util-visit@^1.1.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.4.0.tgz#1cb763647186dc26f5e1df5db6bd1e48b3cc2fb1"
   integrity sha512-FiGu34ziNsZA3ZUteZxSFaczIjGmksfSgdKqBfOejrrfzyUy5b7YrlzT1Bcvi+djkYDituJDy2XB7tGTeBieKw==
@@ -10952,7 +10944,7 @@ vscode-base-languageclient@4.4.0:
   dependencies:
     vscode-languageserver-protocol "^3.10.0"
 
-vscode-css-languageservice@^3.0.11:
+vscode-css-languageservice@^3.0.12:
   version "3.0.13"
   resolved "https://registry.yarnpkg.com/vscode-css-languageservice/-/vscode-css-languageservice-3.0.13.tgz#1788735b65fde54181ea458e6a52cc2bd6dd9126"
   integrity sha512-RWkO/c/A7iXhHEy3OuEqkCqavDjpD4NF2Ca8vjai+ZtEYNeHrm1ybTnBYLP4Ft1uXvvaaVtYA9HrDjD6+CUONg==
@@ -11009,7 +11001,7 @@ vscode-languageserver-protocol@3.14.1, vscode-languageserver-protocol@^3.10.0, v
     vscode-jsonrpc "^4.0.0"
     vscode-languageserver-types "3.14.0"
 
-vscode-languageserver-types@3.14.0, vscode-languageserver-types@^3.10.0, vscode-languageserver-types@^3.12.0, vscode-languageserver-types@^3.13.0, vscode-languageserver-types@^3.6.0-next.1:
+vscode-languageserver-types@3.14.0, vscode-languageserver-types@^3.10.0, vscode-languageserver-types@^3.13.0, vscode-languageserver-types@^3.14.0, vscode-languageserver-types@^3.6.0-next.1:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/vscode-languageserver-types/-/vscode-languageserver-types-3.14.0.tgz#d3b5952246d30e5241592b6dde8280e03942e743"
   integrity sha512-lTmS6AlAlMHOvPQemVwo3CezxBp0sNB95KNPkqp3Nxd5VFEnuG1ByM0zlRWos0zjO3ZWtkvhal0COgiV1xIA4A==
@@ -11092,6 +11084,36 @@ vue-eslint-parser@^5.0.0:
     espree "^4.1.0"
     esquery "^1.0.1"
     lodash "^4.17.11"
+
+vue-language-server@^0.0.45:
+  version "0.0.45"
+  resolved "https://registry.yarnpkg.com/vue-language-server/-/vue-language-server-0.0.45.tgz#a16156848e81cc955b0dab916eae61a6d5798aa5"
+  integrity sha512-oX9U7duUETuKMIuuaXyYMMqtw/eB78KYUrRZ659CAPvl4Gi048DP2CzenZn0Nvw3jlsclvmHV/7zVBrgD5++Yg==
+  dependencies:
+    "@starptech/prettyhtml" "^0.8.4"
+    bootstrap-vue-helper-json "^1.1.1"
+    buefy-helper-json "^1.0.2"
+    element-helper-json "^2.0.2"
+    eslint "^5.9.0"
+    eslint-plugin-vue "^5.0.0"
+    js-beautify "^1.7.5"
+    lodash "^4.17.4"
+    nuxt-helper-json "^1.0.0"
+    parse-gitignore "^1.0.1"
+    prettier "^1.16.4"
+    prettier-eslint "^8.8.2"
+    read-pkg-up "^4.0.0"
+    resolve "^1.8.1"
+    stylus "^0.54.5"
+    stylus-supremacy "^2.12.6"
+    typescript "2.8.4"
+    vscode-css-languageservice "^3.0.12"
+    vscode-emmet-helper "^1.1.19"
+    vscode-languageserver "^5.0.3"
+    vscode-languageserver-types "^3.14.0"
+    vscode-uri "^1.0.1"
+    vue-onsenui-helper-json "^1.0.2"
+    vuetify-helper-json "^1.0.0"
 
 vue-onsenui-helper-json@^1.0.2:
   version "1.0.2"

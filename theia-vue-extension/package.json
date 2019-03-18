@@ -8,18 +8,18 @@
     "theia-extension"
   ],
   "license": "Apache-2.0",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "files": [
     "data",
     "lib",
     "src"
   ],
   "dependencies": {
-    "@devpodio/vue-language-server": "^0.1.0",
     "@theia/core": "next",
     "@theia/languages": "next",
     "@theia/monaco": "next",
-    "@theia/process": "next"
+    "@theia/process": "next",
+    "vue-language-server": "^0.0.45"
   },
   "devDependencies": {
     "rimraf": "latest",
