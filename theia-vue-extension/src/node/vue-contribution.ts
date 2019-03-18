@@ -17,7 +17,8 @@
 import { injectable } from "inversify";
 import { IConnection, BaseLanguageServerContribution } from "@theia/languages/lib/node";
 import { VUE_LANGUAGE_ID, VUE_LANGUAGE_NAME } from '../common';
-import { resolve } from 'path';
+import { SpawnOptions } from 'child_process';
+import { ProcessErrorEvent } from '@theia/process/lib/node/process';
 
 @injectable()
 export class VueContribution extends BaseLanguageServerContribution {
@@ -25,25 +26,26 @@ export class VueContribution extends BaseLanguageServerContribution {
     readonly id = VUE_LANGUAGE_ID;
     readonly name = VUE_LANGUAGE_NAME;
 
-    start(clientConnection: IConnection): void {
+    async start(clientConnection: IConnection): Promise<void> {
         const command = 'node';
         const args: string[] = [
-            resolve(__dirname, 'vue-starter'),
+            __dirname + "/vue-starter.js",
             '--stdio'
         ];
         try {
-            const serverConnection = this.createProcessStreamConnection(command, args);
-            serverConnection.reader.onError(err => {
-                console.log(err)
-            })
+            const serverConnection = await  this.createProcessStreamConnectionAsync(command, args, this.getSpawnOptions());
             this.forward(clientConnection, serverConnection);
         } catch (e) {
             console.log(e);
             throw e;
         }
     }
-    protected onDidFailSpawnProcess(error: Error): void {
+    protected getSpawnOptions(): SpawnOptions | undefined {
+        return undefined;
+    }
+
+    protected onDidFailSpawnProcess(error: ProcessErrorEvent): void {
         super.onDidFailSpawnProcess(error);
-        console.error("Error starting vue language server.");
+        console.error("Error starting Vue language server.");
     }
 }

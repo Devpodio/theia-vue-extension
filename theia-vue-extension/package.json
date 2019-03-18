@@ -18,7 +18,8 @@
     "@devpodio/vue-language-server": "^0.1.0",
     "@theia/core": "next",
     "@theia/languages": "next",
-    "@theia/monaco": "next"
+    "@theia/monaco": "next",
+    "@theia/process": "next"
   },
   "devDependencies": {
     "rimraf": "latest",
