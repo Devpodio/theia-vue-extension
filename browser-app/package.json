@@ -15,9 +15,9 @@
     "@theia/preferences": "next",
     "@theia/process": "next",
     "@theia/terminal": "next",
+    "@theia/textmate-grammars": "next",
     "@theia/typescript": "next",
-    "@theia/workspace": "next",
-    "@theia/textmate-grammars": "next"
+    "@theia/workspace": "next"
   },
   "devDependencies": {
     "@theia/cli": "next"

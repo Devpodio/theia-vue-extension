@@ -19,13 +19,13 @@
     "languages"
   ],
   "dependencies": {
+    "@devpodio/vue-language-server": "^0.0.47",
     "@theia/callhierarchy": "next",
     "@theia/core": "next",
     "@theia/languages": "next",
-    "@theia/textmate-grammars": "next",
     "@theia/monaco": "next",
     "@theia/process": "next",
-    "@devpodio/vue-language-server": "^0.0.47"
+    "@theia/textmate-grammars": "next"
   },
   "devDependencies": {
     "rimraf": "latest",
