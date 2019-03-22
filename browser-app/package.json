@@ -1,9 +1,9 @@
 {
   "private": true,
   "name": "browser-app",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "dependencies": {
-    "@devpodio/theia-vue-extension": "0.1.7",
+    "@devpodio/theia-vue-extension": "0.2.0",
     "@theia/core": "next",
     "@theia/editor": "next",
     "@theia/filesystem": "next",
@@ -16,14 +16,15 @@
     "@theia/process": "next",
     "@theia/terminal": "next",
     "@theia/typescript": "next",
-    "@theia/workspace": "next"
+    "@theia/workspace": "next",
+    "@theia/textmate-grammars": "next"
   },
   "devDependencies": {
     "@theia/cli": "next"
   },
   "scripts": {
     "prepare": "theia build --mode development",
-    "start": "theia start",
+    "start": "theia start --hostname 0.0.0.0",
     "watch": "theia build --watch --mode development"
   },
   "theia": {

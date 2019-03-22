@@ -5,21 +5,27 @@
     "access": "public"
   },
   "keywords": [
-    "theia-extension"
+    "theia-extension",
+    "vue",
+    "vetur",
+    "theia vue"
   ],
   "license": "Apache-2.0",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "files": [
     "data",
     "lib",
-    "src"
+    "src",
+    "languages"
   ],
   "dependencies": {
+    "@theia/callhierarchy": "next",
     "@theia/core": "next",
     "@theia/languages": "next",
+    "@theia/textmate-grammars": "next",
     "@theia/monaco": "next",
     "@theia/process": "next",
-    "vue-language-server": "^0.0.45"
+    "@devpodio/vue-language-server": "^0.0.47"
   },
   "devDependencies": {
     "rimraf": "latest",
@@ -31,12 +37,12 @@
     "build": "tsc",
     "watch": "tsc -w"
   },
-  "author": "Uni Sayo <unibtc@gmail.com> (https://github.com/uniibu)",
-  "repository": "https://github.com/uniibu/theia-vue-extension",
+  "author": "Uni Sayo <unibtc@gmail.com> (https://github.com/devpodio)",
+  "repository": "https://github.com/devpodio/theia-vue-extension",
   "bugs": {
-    "url": "https://github.com/uniibu/theia-vue-extension/issues"
+    "url": "https://github.com/devpodio/theia-vue-extension/issues"
   },
-  "homepage": "https://github.com/uniibu/theia-vue-extension#readme",
+  "homepage": "https://github.com/devpodio/theia-vue-extension#readme",
   "theiaExtensions": [
     {
       "frontend": "lib/browser/vue-frontend-module",

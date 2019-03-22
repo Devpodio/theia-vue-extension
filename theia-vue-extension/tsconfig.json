@@ -1,25 +1,25 @@
 {
-    "compilerOptions": {
-        "strict": true,
-        "experimentalDecorators": true,
-        "noUnusedLocals": true,
-        "skipLibCheck": true,
-        "emitDecoratorMetadata": true,
-        "downlevelIteration": true,
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "target": "es5",
-        "lib": [
-            "es6",
-            "dom"
-        ],
-        "sourceMap": true,
-        "rootDir": "src",
-        "outDir": "lib",
-        "declaration": true,
-        "declarationMap": true
-    },
-    "include": [
-        "src"
-    ]
+  "compilerOptions": {
+    "strict": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "downlevelIteration": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "sourceMap": true,
+    "rootDir": "src",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationMap": true
+  },
+  "include": [
+    "src"
+  ]
 }

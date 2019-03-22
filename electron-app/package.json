@@ -1,9 +1,9 @@
 {
   "private": true,
   "name": "electron-app",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "dependencies": {
-    "@devpodio/theia-vue-extension": "0.1.7",
+    "@devpodio/theia-vue-extension": "0.2.0",
     "@theia/core": "next",
     "@theia/editor": "next",
     "@theia/filesystem": "next",
