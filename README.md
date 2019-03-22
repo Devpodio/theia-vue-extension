@@ -1,6 +1,9 @@
 # Theia Vue Extension
 Adds VueJs extension support to [Theia IDE](https://www.theia-ide.org/) using customized version of [@devpodio/vue-language-server](https://github.com/Devpodio/vue-language-server) based from [vetur](https://github.com/vuejs/vetur/tree/master/server)
 
+## Requirements
+- `v0.2.0` is compatible with Theia `@next` packages. eg. `@theia/core@next`
+
 ## Changes v0.2.0
 
 Starting v0.2.0, `theia-vue-extension` now have all the features of [vetur](https://github.com/vuejs/vetur) which includes:
