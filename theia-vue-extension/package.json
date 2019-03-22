@@ -11,7 +11,7 @@
     "theia vue"
   ],
   "license": "Apache-2.0",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "files": [
     "data",
     "lib",
@@ -19,7 +19,7 @@
     "languages"
   ],
   "dependencies": {
-    "@devpodio/vue-language-server": "^0.0.47",
+    "@devpodio/vue-language-server": "^0.0.48",
     "@theia/callhierarchy": "next",
     "@theia/core": "next",
     "@theia/languages": "next",

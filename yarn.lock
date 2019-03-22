@@ -25,10 +25,10 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@devpodio/vue-language-server@^0.0.47":
-  version "0.0.47"
-  resolved "https://registry.yarnpkg.com/@devpodio/vue-language-server/-/vue-language-server-0.0.47.tgz#6955a3a9cd945be4306532f69924d1de9f4398c3"
-  integrity sha512-hVdrt71VFXFf73/lj4kn/NNCbs5118mtiyoTK0OfHGb3YqwU8vCijsHOAeFFauHGowEc3nMYdoZtvvizn2GGZA==
+"@devpodio/vue-language-server@^0.0.48":
+  version "0.0.48"
+  resolved "https://registry.yarnpkg.com/@devpodio/vue-language-server/-/vue-language-server-0.0.48.tgz#652c4fca4ca514e4a41ccea918c1389a16b40234"
+  integrity sha512-FgE4pJNUR7wUEXNUAxPVOG4gX/mHieyrJN3IzfZET7ZmZqPysSPuqVuIKP7DUsrVTuStHpyVhYrJg3JhdBOHzA==
   dependencies:
     "@starptech/prettyhtml" "^0.8.4"
     bootstrap-vue-helper-json "^1.1.1"
