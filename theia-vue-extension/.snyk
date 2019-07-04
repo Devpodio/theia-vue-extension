@@ -1,0 +1,26 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - '@devpodio/vue-language-server > lodash':
+        patched: '2019-07-04T00:11:26.539Z'
+    - '@devpodio/vue-language-server > eslint > lodash':
+        patched: '2019-07-04T00:11:26.539Z'
+    - '@devpodio/vue-language-server > stylus-supremacy > lodash':
+        patched: '2019-07-04T00:11:26.539Z'
+    - '@devpodio/vue-language-server > eslint > inquirer > lodash':
+        patched: '2019-07-04T00:11:26.539Z'
+    - '@devpodio/vue-language-server > eslint > table > lodash':
+        patched: '2019-07-04T00:11:26.539Z'
+    - '@devpodio/vue-language-server > eslint-plugin-vue > vue-eslint-parser > lodash':
+        patched: '2019-07-04T00:11:26.539Z'
+    - '@devpodio/vue-language-server > prettier-eslint > eslint > lodash':
+        patched: '2019-07-04T00:11:26.539Z'
+    - '@devpodio/vue-language-server > prettier-eslint > vue-eslint-parser > lodash':
+        patched: '2019-07-04T00:11:26.539Z'
+    - '@devpodio/vue-language-server > prettier-eslint > eslint > inquirer > lodash':
+        patched: '2019-07-04T00:11:26.539Z'
+    - '@devpodio/vue-language-server > prettier-eslint > eslint > table > lodash':
+        patched: '2019-07-04T00:11:26.539Z'
