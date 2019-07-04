@@ -16,7 +16,8 @@
     "@theia/process": "next",
     "@theia/terminal": "next",
     "@theia/typescript": "next",
-    "@theia/workspace": "next"
+    "@theia/workspace": "next",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@theia/cli": "next"
@@ -24,9 +25,12 @@
   "scripts": {
     "prepare": "theia build --mode development",
     "start": "theia start",
-    "watch": "theia build --watch --mode development"
+    "watch": "theia build --watch --mode development",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "theia": {
     "target": "electron"
-  }
+  },
+  "snyk": true
 }
