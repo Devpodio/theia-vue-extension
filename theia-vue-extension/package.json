@@ -25,7 +25,8 @@
     "@theia/languages": "next",
     "@theia/monaco": "next",
     "@theia/process": "next",
-    "@theia/textmate-grammars": "next"
+    "@theia/textmate-grammars": "next",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "rimraf": "latest",
@@ -35,7 +36,9 @@
     "prepare": "yarn run clean && yarn run build",
     "clean": "rimraf lib",
     "build": "tsc",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Uni Sayo <unibtc@gmail.com> (https://github.com/devpodio)",
   "repository": "https://github.com/devpodio/theia-vue-extension",
@@ -48,5 +51,6 @@
       "frontend": "lib/browser/vue-frontend-module",
       "backend": "lib/node/vue-backend-module"
     }
-  ]
+  ],
+  "snyk": true
 }
