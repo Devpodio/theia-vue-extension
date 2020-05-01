@@ -17,17 +17,20 @@
     "@theia/terminal": "next",
     "@theia/textmate-grammars": "next",
     "@theia/typescript": "next",
-    "@theia/workspace": "next"
+    "@theia/workspace": "next",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@theia/cli": "next"
   },
   "scripts": {
-    "prepare": "theia build --mode development",
+    "prepare": "npm run snyk-protect && theia build --mode development",
     "start": "theia start --hostname 0.0.0.0",
-    "watch": "theia build --watch --mode development"
+    "watch": "theia build --watch --mode development",
+    "snyk-protect": "snyk protect"
   },
   "theia": {
     "target": "browser"
-  }
+  },
+  "snyk": true
 }
