@@ -19,7 +19,7 @@
     "languages"
   ],
   "dependencies": {
-    "@devpodio/vue-language-server": "^0.0.48",
+    "@devpodio/vue-language-server": "^0.6.0",
     "@theia/callhierarchy": "next",
     "@theia/core": "next",
     "@theia/languages": "next",
