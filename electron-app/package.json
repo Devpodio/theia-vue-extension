@@ -14,7 +14,7 @@
     "@theia/navigator": "next",
     "@theia/preferences": "next",
     "@theia/process": "next",
-    "@theia/terminal": "next",
+    "@theia/terminal": "1.46.0",
     "@theia/typescript": "next",
     "@theia/workspace": "next"
   },
